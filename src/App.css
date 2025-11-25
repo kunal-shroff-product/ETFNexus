@@ -1,2 +1,19 @@
-main {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111316;
+  color: white;
+}
+
+/* Nice scrollbar for all devices */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #1a1d21; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #eab308; }
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #374151 #1a1d21;
 }
